@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root{
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-saturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+
+    --dark-gray: hsl(0, 0%, 59%);
+}
+/* name and stats font-size: 18px  */
+
+/*  */
+
+/* Weights : 400, 700 */
+
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Kumbh sans', sans-serif;
+    min-height: 100vh;
+    background-image: url("./images/bg-pattern-top.svg"), url(./images/bg-pattern-bottom.svg);
+    background-position: right 50vw bottom 40vh, 50vw 50vh;
+    background-repeat: no-repeat;
+    background-color: var(--dark-cyan);
+}
+
+#main{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#card{
+    width: 350px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+#back-image{
+    max-width:100%;
+    border-radius: 15px 15px 0 0;
+}
+
+#back-img{
+    width:100%;
+    border-radius: 15px 15px 0 0;
+}
+
+#victor-img{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 57px;
+}
+
+#victor{
+    border-radius: 50%;
+    border:5px solid white;
+}
+
+#profile{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 35px;
+    gap: 10px;
+}
+
+hr{
+    color: var(--dark-gray);
+    height: 1px;
+    width: 100%;
+    opacity: 0.3;
+}
+.name-age{
+    display: flex;
+    gap:10px;
+}
+
+.name-age h1,p{
+    font-size: 18px;
+}
+
+.name-age p{
+    color: var(--dark-grayish-blue);
+}
+
+.location p{
+    font-size: 15px;
+    color: var(--dark-gray);
+}
+
+.stats{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.stat{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.stat h1{
+    font-size: 18px;
+}
+
+.stat p{
+    font-size: 10px;
+    color: var(--dark-gray);
+    letter-spacing: 0.7px;
+}
+
+@media (max-width: 375px){
+    #card{
+        width:90%;
+    }
+}
